@@ -8,7 +8,6 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    binding.pry
     if BRANDS.exclude?(brand)
       BRANDS << brand
     end
@@ -18,5 +17,5 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-  
+
 end
